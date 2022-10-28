@@ -33,6 +33,16 @@
   --box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
 }
 
+@media screen and (max-widht: 992px) {
+  :root {
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --smal-font-size: 0.813rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -167,15 +177,8 @@ h3 {
   letter-spacing: 0.125rem;
 }
 
-.nav-logo::after {
-  position: absolute;
-  content: "";
-  width: 0.3rem;
-  height: 0.3rem;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  top: 55%;
-  left: 19%;
+.nav-logo span {
+  color: var(--color-primary);
 }
 
 .nav-menu {
@@ -370,69 +373,75 @@ h3 {
   top: -2.25rem;
 }
 
-.portfolio .box-container {
+.title {
+  padding-left: 250px;
+  margin-bottom: 50px;
+}
+.portfolio .box-container{
   display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap:1.5rem;
 }
 
-.portfolio .box-container .box {
-  flex: 1 1 30rem;
-  height: 18rem;
+.portfolio .box-container .box{
+  flex:1 1 30rem;
+  height:25rem;
   position: relative;
-  overflow: hidden;
-  border: 1rem solid #fff;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  background: white;
+  overflow:hidden;
+  border:1rem solid #fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  background:#fff;
   border-radius: var(--border-radius);
 }
 
-.portfolio .box-container .box img {
-  height: 100%;
-  width: 100%;
+.portfolio .box-container .box img{
+  height:100%;
+  width:100%;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   position: relative;
+  transition: .3s;
   z-index: 1;
 }
 
-.portfolio .box-container .box:hover img {
-  height: 75%;
-  width: 75%;
+.portfolio .box-container .box:hover img{
+  height:75%;
+  width:75%;
 }
 
-.portfolio .box-container .box h3 {
+.portfolio .box-container .box h3{
   position: absolute;
-  bottom: 0.5rem;
-  left: 1rem;
+  bottom:.5rem; left:1rem;
   font-size: 2.5rem;
-  color: #333;
+  color:#333;
   text-transform: uppercase;
 }
 
-.portfolio .box-container .box .icons {
+.portfolio .box-container .box .icons{
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top:1rem; right:1rem;
 }
 
-.portfolio .box-container .box .icons a {
+.portfolio .box-container .box .icons a{
   display: block;
-  height: 4rem;
-  width: 4rem;
-  border-radius: 0.5rem;
+  height:4rem;
+  width:4rem;
+  border-radius: .5rem;
   background: #eee;
-  color: #333;
+  color:#333;
   font-size: 1.7rem;
   line-height: 4rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.portfolio .box-container .box .icons a:hover {
-  background: var(--main-color);
-  color: #fff;
+.portfolio .box-container .box .icons a:hover{
+  background:var(--main-color);
+  color:var(--color-primary);
 }
+
 
 .services .service-item {
   flex: 0 0 33.33%;
@@ -458,10 +467,6 @@ h3 {
 .service-item h3 {
   margin-bottom: var(--m-0-5);
   color: #ffff;
-}
-
-.service-item p {
-  color: white;
 }
 
 .education {
@@ -572,50 +577,111 @@ h3 {
   width: 100%;
 }
 .contact-input {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-padding: 1rem 1rem 1rem 0;
-background: none;
-color: var(--color-dark);
-outline: none;
-border: none;
-z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1rem 1rem 0;
+  background: none;
+  color: var(--color-dark);
+  outline: none;
+  border: none;
+  z-index: 1;
 }
 
-.contact-label{
-position: absolute;
-top:0;
-width: 100%;
-font-size: var(--smal-font-size);
-transition: .3s;
+.contact-label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: var(--smal-font-size);
+  transition: 0.3s;
 }
 
 .contact-area {
-height: 7rem;
+  height: 7rem;
 }
 .contact-area textarea {
-resize: none;
-
+  resize: none;
 }
 
 .contact-input:focus + .contact-label {
-top: -.75rem;
-left: 0;
-z-index: 10;
-color:var(--color-primary);
-
+  top: -0.75rem;
+  left: 0;
+  z-index: 10;
+  color: var(--color-primary);
 }
 
 .footer {
-padding: 60px 0;
+  padding: 60px 0;
+}
 
+.footer-text {
+  padding-left: 40%;
+}
+
+
+
+@media (max-width:991px){
+
+  html{
+      font-size: 55%;
+  }
+  
+  body{
+      padding: 0;
+  }
+
+
+  .about-content .skills .skill-item .progress {
+    height: 0.45rem;
+
+    width: 100px;
+    position: relative;
+  }
+
+  .title {
+    padding-left: 100px;
+    margin-bottom: 10px;
+  }
+
+  .cursor-1,
+  .cursor-2{
+      display: none;
+  }
 
 }
 
-.footer-text{
-padding-left: 40%;
-}
+@media (max-width:450px){
 
+  html{
+      font-size: 50%;
+  }
+
+  header{
+      width:100%;
+  }
+  .skill-item .progress {
+    width: 100%;
+    padding-right: 40px;
+    
+      }
+
+      .about-content .skills .skill-item .progress {
+        height: 0.45rem;
+        width: 100px;
+        position: relative;
+      }
+
+      .title {
+        padding-left: 0px;
+        margin-bottom: 10px;
+      }
+
+
+
+  .experience .box-container .box{
+      padding-right: 0;
+  }
+
+}
