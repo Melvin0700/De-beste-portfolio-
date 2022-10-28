@@ -103,6 +103,7 @@ h1 {
   font-size: var(--h1-font-size);
 }
 
+
 h2 {
   font-size: var(--h2-font-size);
 }
@@ -232,20 +233,8 @@ cursor: pointer;
   display: none;
 }
 
-.active-link {
-  position: relative;
-}
 
-.active-link::before {
-  content: "";
-  position: absolute;
-  bottom: -0.75rem;
-  left: 45%;
-  width: 0.3rem;
-  height: 0.3rem;
-  background-color: var(--color-primary);
-  border-radius: 50%;
-}
+
 .home {
   display: flex;
   height: 100vh;
@@ -638,10 +627,10 @@ cursor: pointer;
 
 
 
-@media (max-width:991px){
+@media (max-width:3000px){
 
   html{
-      font-size: 55%;
+      font-size: 100%;
   }
   
   body{
@@ -652,37 +641,7 @@ cursor: pointer;
   .about-content .skills .skill-item .progress {
     height: 0.45rem;
 
-    width: 100px;
-    position: relative;
-  }
-
-  .title {
-    padding-left: 100px;
-    margin-bottom: 10px;
-  }
-
-  .cursor-1,
-  .cursor-2{
-      display: none;
-  }
-
-}
-
-@media (max-width:2000px){
-
-  html{
-      font-size: 80%;
-  }
-  
-  body{
-      padding: 0;
-  }
-
-
-  .about-content .skills .skill-item .progress {
-    height: 0.45rem;
-
-    width: 600px;
+    width: 300px;
     position: relative;
   }
 
