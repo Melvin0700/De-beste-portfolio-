@@ -668,6 +668,36 @@ cursor: pointer;
 
 }
 
+@media (max-width:2000px){
+
+  html{
+      font-size: 80%;
+  }
+  
+  body{
+      padding: 0;
+  }
+
+
+  .about-content .skills .skill-item .progress {
+    height: 0.45rem;
+
+    width: 600px;
+    position: relative;
+  }
+
+  .title {
+    padding-left: 100px;
+    margin-bottom: 10px;
+  }
+
+  .cursor-1,
+  .cursor-2{
+      display: none;
+  }
+
+}
+
 @media (max-width:450px){
 
   html{
