@@ -627,10 +627,10 @@ cursor: pointer;
 
 
 
-@media (max-width:3000px){
+@media (max-width:1500px){
 
   html{
-      font-size: 100%;
+      font-size: 80%;
   }
   
   body{
