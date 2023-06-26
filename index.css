@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Palanquin:wght@200&family=Roboto:ital@1&display=swap");
+
+:root {
+  --bg-color: #ecf0f1;
+  --second-bg-color: black;
+  --text-color: #fff4f4;
+  --main-color: #f1c376;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "po";
+}
+
+body {
+  background: var(--bg-color);
+  min-height: 200vh;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6;
+  padding: 20px 50px;
+  background: #ecf0f1;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  padding: 30px 12px;
+}
+
+.home-content {
+  max-width: 50rem;
+  margin: 300px 150px;
+}
+
+.home-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.home-content .text-animatie {
+  position: relative;
+  width: 32.8rem;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  height: 2000px;
+  width: auto;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 100%;
+  height: auto;
+}
+
+.home1 {
+  width: 10%;
+}
+
+/*button begin */
+.button,
+.button::before,
+.button::after {
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  position: absolute;
+}
+.button {
+  transform: translateX(50%);
+  right: 86%;
+  line-height: 60px;
+  height: 60px;
+  width: auto;
+  color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  top: 40rem;
+  cursor: pointer;
+}
+.button.floating {
+  position: fixed;
+  top: 30px;
+  animation-name: floatdown;
+}
+.button::before {
+  content: "Let's\00a0 talk";
+  opacity: 1;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1e88e5;
+  border: none;
+  transition: background-color 0.3s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.button.floating::before {
+  opacity: 0;
+}
+
+.envelope {
+  opacity: 0;
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  background-color: #ff647f;
+  text-align: center;
+  border: none;
+  border-radius: 40%;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+}
+
+div.button.floating svg.envelope {
+  opacity: 1;
+}
+
+@keyframes floatdown {
+  100% {
+    top: calc(100vh - 100px);
+    right: 95px; /* 80+15px */
+  }
+}
+
+.button.back {
+  animation-name: floatup;
+}
+@keyframes floatup {
+  0% {
+    top: calc(175vh - 100px);
+    right: 95px; /* 80+15px */
+  }
+
+  100% {
+    top: 40rem;
+    right: 86%;
+  }
+}
+
+/*einde button*/
+
+.skills {
+  display: flex;
+  padding: 100px;
+  padding-left: 10px;
+  gap: 3rem;
+}
+
+.row {
+  width: 80%;
+  max-width: 1170px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow-x: hidden;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.row .imgWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.row .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.row .contentWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+.row .contentWrapper h2 {
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.row .contentWrapper p {
+  margin-bottom: 2rem;
+}
+
+.textWrapper span {
+  color: #1e88e5;
+  font-family: "Palanquin", sans-serif;
+}
+
+.textWrapper {
+  gap: 5rem;
+  font-family: "Palanquin", sans-serif;
+}
+
+.fa-brands {
+  padding: 8px;
+}
+/*my projects*/
+
+.myproject {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 60%;
+  margin: 10rem auto 0 auto;
+  text-align: center;
+  gap: 2rem;
+}
+
+.myproject img {
+  height: 250px;
+  border-radius: 5%;
+  width: 50%;
+}
+
+.text h2 {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+.textWrapper p {
+  font-family: "Roboto", sans-serif;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 20px;
+}
+
+.myproject .text span {
+  font-weight: bold;
+  padding-top: 100%;
+}

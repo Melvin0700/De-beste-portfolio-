@@ -4,337 +4,110 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <title>Portfolio Melvin K</title>
+    <title>Portfolio website</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/8e2a2fb117.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header" id="header">
-      <nav class="nav container padd-15">
-        <a href="#" class="nav-logo">
-          <h2>MK<span>.</span></h2>
-        </a>
-
-        <div class="nav menu" id="nav-menu">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link ">About me</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link ">My projects</a>
-            </li>
-            <li class="nav-item">
-              <a href="#experience" class="nav-link ">My experiences</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link ">Contact</a>
-            </li>
-            
-          </ul>
-        </div>
-
-        <div class="nav-btns">
-         <img src="moon.png" id="dark">
-        </div>
-      </nav>
+    <header>
+      <a href="#" class="logo">Melvin.dev</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
     </header>
-    <main class="main-content">
-      <section class="home" id="home">
-        <div class="container">
-          <div class="intro">
-            <img src="profile.png" alt="foto" />
-            <h1>Melvin Korving</h1>
-            <span>Front-End<span class="info-text"> developer</span></span>
-            <ul class="social-icons">
-              <li>
-                <a href="https://twitter.com/explore"><i class="lni lni-twitter-original"></i></a>
-              </li>
-              <li>
-                <a href="https://nl.linkedin.com/?trk=guest_homepage-basic_nav-header-logo"><i class="lni lni-linkedin-original"></i></a>
-              </li>
-              <li>
-                <a href="https://nl.pinterest.com"><i class="lni lni-pinterest"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="lni lni"></i></a>
-              </li>
-            </ul>
-            <div>
-              <a href="#about" class="btn btn-default" id="about">About me</a>
-            </div>
-            <div class="scroll-down">
-              <a href="#" class="mouse-wrapper">
-                <span>Scroll Down</span>
-                <span class="mouse">
-                  <span class="wheel"></span>
-                </span>
-              </a>
-            </div>
-          </div>
+
+    <main class="home1" id="home1">
+      <div class="home-content">
+        <h1>Front-end developer 👋</h1>
+        <div class="text-animatie"></div>
+        <p>
+          Hi, I'm Melvin! a passionate front-end developer based in the
+          Netherlands.
+        </p>
+
+        <div class="button" id="button">
+          <svg
+            class="envelope"
+            xmlns="http://www.w3.org/2000/svg"
+            y="500"
+            height="3em"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+            />
+          </svg>
         </div>
-      </section>
-      <section class="about section" id="about">
-        <div class="container">
-          <h2 class="section-title padd-15">About me</h2>
-          <div class="row">
-            <div class="about-img padd-15">
-<img src="mario.png" alt="mario">
-            </div>
-            <div class="about-content" padd-15>
-                <div class="rounded">
-                    <div class="row">
-                        <div class="about-text">
-                            <p>I'm Melvin Korving. I have always been interested in programming and designing websites. 
-                              I have been studying computer science at Utrecht University of Applied Sciences since 2022. Besides programming, 
-                              I also like to exercise and can often be found in the gym. I am also a big fan of movies. In my spare time I work in the office at a traffic school.</p>
-                                 </div>
-                                 <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item">
-
-                                            <h4>Cooking</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width:95%; background: rgb(255, 209, 92); "></div>
-                                                <div class="skill-percent">95%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-
-                                            <h4>English</h4>
-                                            <div class="progress">
-                                                <div class="progress-in"style="width:75%; background: rgb(255, 76, 96); "></div>
-                                                <div class="skill-percent">75%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <h4>Problem Solving</h4>
-                                            <div class="progress">
-                                                <div class="progress-in"style="width:85%; background: rgb(108, 108, 229); "></div>
-                                                <div class="skill-percent">85%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                 </div>
-
-                    </div>
-                </div>
-            </div>
-          </div>
+        <div class="skills">
+          <img src="html.png" />
+          <img src="css.png" />
+          <img src="github.png" />
+          <img src="js.png" />
+          <img src="physics.png" />
         </div>
-      </section>
-      <section class="section services section">
-        <div class="container">
-            
-            <div class="row">
-                <div class="service-item padd-15">
-                    <div class="service-item-inner" style="background: rgb(108, 108, 229);">
-                        <img src="football.png" alt="football">
-                        <h3>Sport</h3>
-                        <p>I find it important to take good care of yourself. Always love to go to the gym and clear my head.  </p>
-                    </div>
-                </div>
-                <div class="service-item padd-15">
-                    <div class="service-item-inner" style="background: rgb(249, 215, 76);">
-                        <img src="drum.png" alt="drum">
-                        <audio src=""></audio>
-                        <h3>Music</h3>
-                        <p>I am very interested in music. I listen to a lot of music and I also play drums. I am currently in a band that I sometimes perform with.</p>
-                    </div>
-                </div>
-                <div class="service-item padd-15">
-                    <div class="service-item-inner" style="background: rgb(249, 123, 139);">
-                        <img src="camera.png" alt="camera">
-                        <h3>Movies</h3>
-                        <p>Movies are one of my biggest hobbies. I go to the movies almost every week and I like all genres.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-    
+      </div>
 
-      <section class="portfolio section" id="projects">
-
-        <h1 class="title"> <span> my </span> portfolio </h1>
-    
-        <div class="box-container">
-    
-            <div class="box">
-                <img src="project.jpg" alt="">
-              <h3 class="box-text"> My portfolio </h3>
-                <div class="icons">
-                   
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <img src="project2.jpg" alt="">
-                <h3 class="box-text"> My portfolio </h3>
-                <div class="icons">
-                    
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-    
-            <div class="box">
-                <img src="project3.jpg" alt="">
-                <h3 class="box-text"> My portfolio </h3>
-                <div class="icons">
-        
-                    <a href="#" class="fas fa-search"></a>
-                </div>
-            </div>
-    
-           
-    
-        </div>
-    
-    </section>
-
-    <section class="section" id="experience">
-        <div class="container">
-           <h2 class="section-title padd-15">Experience</h2> 
-           <div class="row">
-            <div class="education padd-15">
-               <div class="row">
-                <div class="timeline-box">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                         <i class="lni lni-graduation timeline-icon"></i>
-                         <h3 class="timeline-date">
-                            <i class="lni lni-write"></i> 2022-present
-                         </h3>
-                         <h3 class="timeline-title">HBO</h3>
-                         <p class="timeline-text">I am currently studying Computer Science at the University of Applied Sciences Utrecht in the Netherlands. If all goes well I will have my bachelor's degree in 2026.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <i class="lni lni-graduation timeline-icon"></i>
-                            <h3 class="timeline-date">
-                               <i class="lni lni-write"></i> 2013-2019
-                            </h3>
-                            <h3 class="timeline-title">Middelbaar onderwijs</h3>
-                            <p class="timeline-text">Montaigne was my secondary education. Here I spent a lot of time programming and designing. I graduated with honours from the Higher General Secondary Education (HAVO).</p>
-                           </div>
-                           <div class="timeline-item">
-                            <i class="lni lni-graduation timeline-icon"></i>
-                            <h3 class="timeline-date">
-                               <i class="lni lni-write"></i> 2005-2013
-                            </h3>
-                            <h3 class="timeline-title">Elementary School</h3>
-                            <p class="timeline-text">During this time I attended elementary School, at De Winde in Nootdorp.</p>
-                           </div>
-                    </div>
-                </div>
-               </div> 
-            </div>
-            <div class="experience padd-15">
-                <div class="row">
-                       <div class="row">
-                        <div class="timeline-box">
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <i class="lni lni-website timeline-icon"></i>
-                                 <h3 class="timeline-date">
-                                    <i class="lni lni-write"></i> 2019-present
-                                 </h3>
-                                 <h3 class="timeline-title">Web designer</h3>
-                                 <p class="timeline-text">I built a site for work in 2019, and since then the interest in web design started.</p>
-                                </div>
-                                <div class="timeline-item">
-                                    <i class="lni lni-website timeline-icon"></i>
-                                    <h3 class="timeline-date">
-                                       <i class="lni lni-write"></i> 2021-present
-                                    </h3>
-                                    <h3 class="timeline-title">Front-end</h3>
-                                    <p class="timeline-text">Last year I started to focus on the frond-end and I also got a job within my job to maintain the website and 
-                                      I am responsible for the planning site where the instructors schedule their students.</p>
-                                   </div>
-                                   <div class="timeline-item">
-                                    <i class="lni lni-website timeline-icon"></i>
-                                    <h3 class="timeline-date">
-                                       <i class="lni lni-write"></i> 2022-present
-                                    </h3>
-                                    <h3 class="timeline-title">Business & IT</h3>
-                                    <p class="timeline-text">On the business side, I delve into how organizations can make a good match between what is
-                                       currently possible with information technology and data and what the organization and the customers need.</p>
-                                   </div>
-                            </div>
-                        </div>
-                       </div> 
-            
-           </div>
-        </div>
-
-
-    </section>
-
-    <section class="contact section" id="contact">
-      <div class="container">
-        <h2 class="section-title padd-15">Get in touch</h2>
-        <div class="row">
-          <div class="contact-box padd-15">
-            <div class="contact-data">
-              <div class="contact-infomation">
-                <h3 class="contact-subtitle">Call me </h3> 
-                <span class="contact-description">
-                  <i class="lni lni-phone contact-icon"></i>
-                    +0644200230
-                  
-                </span>
-              </div>
-              <div class="contact-infomation">
-                <h3 class="contact-subtitle">Mail </h3> 
-                <span class="contact-description">
-                  <i class="lni lni-user contact-icon"></i>
-                    test@gmail.com
-                 </span>
-              </div>
-            </div>
-          </div>
-          <form action="" class="contact-form padd-15">
-            <div class="contact-inputs">
-              <div class="contact-content">
-                <input type="email" class="contact-input">
-                <label for="" class="contact-label">Email</label>
-                <span></span>
-              </div>
-              <div class="contact-content">
-                <input type="text" class="contact-input">
-                <label for="" class="contact-label">Subject</label>
-                <span></span>
-              </div>
-              <div class="contact-content contact-area">
-                <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
-                <label for="" class="contact-label">Message</label>
-                <span></span>
-              </div>
-            </div>
-            <a href="#" class="btn btn-default">Send</a>
-          </form>
-        </div>
-      </div> 
-    </section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-text padd-15">
-      <p>&copy; Melvin Korving</p>
-    </div>
-  </div>
-</footer>
+      <div class="home2">
+        <img class="avatar" src="AvatarHome.png" tag="" />
+      </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
+    <div class="row">
+      <div class="imgWrapper">
+        <img src="aboutme.jpg" />
+      </div>
+      <div class="contentWrapper">
+        <div class="content">
+          <span class="textWrapper">
+            About <span> me</span>
+            <h2>
+              Dedicated front-end developer based in the Netherlands, The Hague
+              📍
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+              architecto repudiandae nostrum laudantium incidunt, at quidem
+              maxime facere inventore eos vel soluta et blanditiis? Reiciendis,
+              voluptatem quam aliquam necessitatibus cumque, atque modi
+              veritatis aperiam dolor fugiat est magni? Ducimus, dolore.
+              <br />
+              <br />
+              <i class="fa-brands fa-twitter fa-lg"></i>
+              <i class="fa-brands fa-linkedin-in fa-lg"></i>
+              <i class="fa-brands fa-github fa-lg"></i>
+              <br />
+              <br />
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="myproject">
+      <div class="text">
+        <h3>Hairdresser✂️</h3>
+
+        <p>
+          Hier hebben we een kapperswebsite gebouwd met de front-end en de
+          back-end. De website is voorzien van een aspraak maken systeem en je
+          kan alle informatie vinden over verschillende hairstyles.
+          <br />
+          <br />
+          <span>Tailwind</span>
+          <br />
+          <br />
+        </p>
+      </div>
+
+      <img src="Kappers_foto.jpg" alt="" />
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/script.js"></script>
   </body>
 </html>
