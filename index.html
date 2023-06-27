@@ -14,28 +14,32 @@
   <body>
     <header>
       <a href="#" class="logo">Melvin.dev</a>
-      <ul>
-        <li><a href="#">Home</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="home1" id="home1">
       <div class="home-content">
         <h1>Front-end developer 👋</h1>
-        <div class="text-animatie"></div>
+        <div class="text-animatie" aria-hidden="true"></div>
         <p>
           Hi, I'm Melvin! a passionate front-end developer based in the
           Netherlands.
         </p>
 
         <div class="button" id="button">
-          <a href="https://mail.google.com/mail/u/0/#inbox">
+          <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="Email">
             <svg
               class="envelope"
               xmlns="http://www.w3.org/2000/svg"
               y="500"
               height="3em"
               viewBox="0 0 512 512"
+              role="img"
+              aria-hidden="true"
             >
               <path
                 d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
@@ -45,22 +49,22 @@
         </div>
 
         <div class="skills">
-          <img src="html.png" />
-          <img src="css.png" />
-          <img src="github.png" />
-          <img src="js.png" />
-          <img src="physics.png" />
+          <img src="html.png" alt="HTML" />
+          <img src="css.png" alt="CSS" />
+          <img src="github.png" alt="GitHub" />
+          <img src="js.png" alt="JavaScript" />
+          <img src="physics.png" alt="Physics" />
         </div>
       </div>
 
       <div class="home2">
-        <img class="avatar" src="AvatarHome.png" tag="" />
+        <img class="avatar" src="AvatarHome.png" alt="Avatar" />
       </div>
     </main>
 
     <div class="row">
       <div class="imgWrapper">
-        <img src="aboutme.jpg" />
+        <img src="aboutme.jpg" alt="About Me" />
       </div>
       <div class="contentWrapper">
         <div class="content">
@@ -80,16 +84,19 @@
               also like sports and can therefore often be found in the gym.
               <br />
               <br />
-              <a href="https://twitter.com/home">
-                <i class="fa-brands fa-twitter fa-lg"></i
-              ></a>
-              <a href="https://www.linkedin.com/?original_referer=">
-                <i class="fa-brands fa-linkedin-in fa-lg"></i
-              ></a>
+              <a href="https://twitter.com/home" aria-label="Twitter">
+                <i class="fa-brands fa-twitter fa-lg"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/?original_referer="
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+              </a>
 
-              <a href="https://github.com"
-                ><i class="fa-brands fa-github fa-lg"></i
-              ></a>
+              <a href="https://github.com" aria-label="GitHub">
+                <i class="fa-brands fa-github fa-lg"></i>
+              </a>
               <br />
               <br />
             </p>
@@ -113,11 +120,11 @@
           <br />
         </p>
       </div>
-      <img src="Kappers_foto.jpg" alt="" />
+      <img src="Kappers_foto.jpg" alt="Hairdresser" />
     </div>
 
     <div class="spark">
-      <img src="Spark.png" alt="" />
+      <img src="Spark.png" alt="Spark" />
       <div class="text">
         <h3>Game development 🎮</h3>
         <br />
@@ -153,8 +160,8 @@
           <br />
           <br />
 
-          <a href="http://145.89.192.177/"
-            >Live Demo <i class="fa-sharp fa-solid fa-paperclip"></i>
+          <a href="http://145.89.192.177/" aria-label="Live Demo">
+            Live Demo <i class="fa-sharp fa-solid fa-paperclip"></i>
           </a>
           <br />
           <br />
@@ -167,7 +174,7 @@
         </p>
       </div>
 
-      <img src="gamewebsite.png" alt="" />
+      <img src="gamewebsite.png" alt="Spark Game Website" />
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
