@@ -255,7 +255,8 @@ div.button.floating svg.envelope {
 
 .textWrapper span {
   color: #1e88e5;
-  font-family: "Palanquin", sans-serif;
+  font-weight: bold;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 .textWrapper {
@@ -306,4 +307,36 @@ div.button.floating svg.envelope {
 .myproject .text span {
   font-weight: bold;
   padding-top: 100%;
+}
+
+.spark {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 60%;
+  text-align: center;
+  margin-left: 300px;
+  gap: 2rem;
+}
+
+.spark img {
+  height: 250px;
+  border-radius: 5%;
+  width: 50%;
+}
+
+.spark-website {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 60%;
+  text-align: center;
+  margin-left: 300px;
+  gap: 2rem;
+}
+
+.spark-website img {
+  height: 250px;
+  border-radius: 5%;
+  width: 50%;
 }
