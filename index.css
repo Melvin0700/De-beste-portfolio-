@@ -98,6 +98,7 @@ main {
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
   font-family: "Roboto", sans-serif;
+  color: gray;
 }
 
 .section {
@@ -251,6 +252,8 @@ div.button.floating svg.envelope {
 
 .row .contentWrapper p {
   margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: gray;
 }
 
 .textWrapper span {
@@ -259,13 +262,9 @@ div.button.floating svg.envelope {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-.textWrapper {
-  gap: 5rem;
-  font-family: "Palanquin", sans-serif;
-}
-
 .fa-brands {
   padding: 8px;
+  color: black;
 }
 /*my projects*/
 
@@ -279,18 +278,24 @@ div.button.floating svg.envelope {
   gap: 2rem;
 }
 
+.myproject .text h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.myproject .text p {
+  font-family: "Roboto", sans-serif;
+  color: gray;
+}
+
+.myproject span {
+  color: black;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
 .myproject img {
   height: 250px;
   border-radius: 5%;
   width: 50%;
-}
-
-.text h2 {
-  margin: 0;
-  margin-bottom: 1.5rem;
-}
-.textWrapper p {
-  font-family: "Roboto", sans-serif;
 }
 
 .row-container {
@@ -309,6 +314,9 @@ div.button.floating svg.envelope {
   padding-top: 100%;
 }
 
+/*my project end */
+
+/*spark begin */
 .spark {
   display: flex;
   justify-content: space-between;
@@ -319,12 +327,47 @@ div.button.floating svg.envelope {
   gap: 2rem;
 }
 
+.spark .text h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.spark .text p {
+  font-family: "Roboto", sans-serif;
+  color: gray;
+}
+
+.spark span {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: black;
+}
+
 .spark img {
   height: 250px;
   border-radius: 5%;
   width: 50%;
 }
 
+/*spark eind */
+/*spark-website begin */
+
+.spark-website .text h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.spark-website .text p {
+  font-family: "Roboto", sans-serif;
+  color: gray;
+}
+
+.spark-website span {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: black;
+}
+
+.spark-website a {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #1e88e5;
+}
 .spark-website {
   display: flex;
   justify-content: space-between;
@@ -340,3 +383,4 @@ div.button.floating svg.envelope {
   border-radius: 5%;
   width: 50%;
 }
+/*spark-website eind */
